@@ -18,5 +18,6 @@ This is a minimal yet powerful mobile task manager application built with Flutte
 ### 🎨 UI & Code Inspiration
 - [Tasks App UI by Rasool G. on Dribbble](https://dribbble.com/shots/5097164-Tasks-App)
 - [Flutter AI Chat Tutorial by Hussain Mustafa (GitHub)](https://github.com/hussain-mustafa990)
-
+- [Task Manager Flutter Tutorial by Rea2er (GitHub)](https://github.com/Rea2er)
+  
 ---
