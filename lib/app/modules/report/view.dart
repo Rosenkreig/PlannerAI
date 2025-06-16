@@ -25,7 +25,7 @@ class ReportPage extends StatelessWidget {
                 padding: EdgeInsets.all(4.0.wp),
                 child: Text('My Report',
                   style: TextStyle(
-                    fontSize: 24.0.sp,
+                    fontSize: 20.0.sp,
                     fontWeight: FontWeight.bold,
                   ),
                 ),

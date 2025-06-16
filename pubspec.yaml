@@ -33,6 +33,7 @@ dependencies:
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
+  flutter_dotenv: ^5.1.0
   cupertino_icons: ^1.0.8
   get: ^4.7.2
   get_storage: ^2.0.3
@@ -40,7 +41,9 @@ dependencies:
   flutter_easyloading: ^3.0.5
   dotted_border: ^2.1.0
   step_progress_indicator: ^1.0.2
-  intl: ^0.20.2
+  flutter_gemini: ^3.0.0
+  intl: ^0.19.0
+  dash_chat_2: ^0.0.21
 
 dev_dependencies:
   flutter_test:
@@ -65,7 +68,8 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-#assets:
+  assets:
+    - .env
   #- assets/images/
   # Add all your .png files explicitly here
   #   - images/a_dot_ham.jpeg

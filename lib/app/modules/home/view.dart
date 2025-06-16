@@ -3,6 +3,7 @@ import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:get/get.dart';
 import 'package:taskmanager/app/core/values/colors.dart';
 import 'package:taskmanager/app/data/models/task.dart';
+import 'package:taskmanager/app/modules/ai_chat/view.dart';
 import 'package:taskmanager/app/modules/home/controller.dart';
 import 'package:taskmanager/app/core/utils/extensions.dart';
 import 'package:taskmanager/app/modules/home/widgets/add_card.dart';
@@ -18,8 +19,9 @@ class HomePage extends GetView<HomeController> {
     return Scaffold(
       body: Obx(() => IndexedStack(
           index: controller.tabIndex.value,
-        
-          children: [SafeArea(
+          children: [
+            ReportPage(),
+            SafeArea(
             child: ListView(
               children: [
                 Padding(
@@ -27,7 +29,7 @@ class HomePage extends GetView<HomeController> {
                   child: Text(
                     'My List',
                     style : TextStyle(
-                    fontSize: 24.0.sp,
+                    fontSize: 20.0.sp,
                     fontWeight: FontWeight.bold,
                     ),  
                   ),
@@ -56,13 +58,14 @@ class HomePage extends GetView<HomeController> {
               ],
             ),
           ),
-          ReportPage(),]
+            AIChat()
+          ]
         ),
       ),
       floatingActionButton: DragTarget<Task>(
         builder: (_, __, ___) => Obx(
           () => FloatingActionButton(
-            backgroundColor: controller.deleting.value ? Colors.red : blue,
+            backgroundColor: controller.deleting.value ? const Color.fromARGB(255, 167, 102, 97) : Colors.blueGrey,
             foregroundColor: Colors.white,
             onPressed: () {
               if(controller.tasks.isNotEmpty){
@@ -81,7 +84,7 @@ class HomePage extends GetView<HomeController> {
           EasyLoading.showSuccess('Delete Success');
         },
       ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      floatingActionButtonLocation: FloatingActionButtonLocation.endTop,
       bottomNavigationBar: Theme(
         data: ThemeData(
           splashColor: Colors.transparent,
@@ -94,18 +97,16 @@ class HomePage extends GetView<HomeController> {
             showUnselectedLabels: false,
             items: [
               BottomNavigationBarItem(
-                label: 'Home',
-                icon: Padding(
-                  padding: EdgeInsets.only(right: 16.0.wp),
-                  child: const Icon(Icons.apps),
+                label: 'Report',
+                icon: Icon(Icons.data_usage),
                 ),
+                BottomNavigationBarItem(
+                label: 'Home',
+                icon:  Icon(Icons.home),
                 ),
               BottomNavigationBarItem(
-                label: 'Report',
-                icon: Padding(
-                  padding: EdgeInsets.only(left: 16.0.wp),
-                  child: const Icon(Icons.data_usage),
-                ),
+                label: 'AIChat',
+                icon: Icon(Icons.auto_awesome),
                 ),
           
           
