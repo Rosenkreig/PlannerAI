@@ -1,16 +1,22 @@
 # PlannerAI
 
-A new Flutter project.
+This is a minimal yet powerful mobile task manager application built with Flutter. It supports AI-assisted task creation via Gemini API, intuitive UI, and a clean report screen to track your progress.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+<p align="center">
+ <img src="https://github.com/user-attachments/assets/422b0a3d-c860-40b2-83ad-b08910e58420" width="800"/>
+</p>
 
-A few resources to get you started if this is your first Flutter project:
+### ✨ Key Features
+- Add and organize tasks by category
+- AI Chatbot powered by Gemini API for natural interaction
+- Visual report screen with completion statistics
+- Persistent data storage with GetStorage
+- Fully responsive on Android & iOS
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### 🎨 UI & Code Inspiration
+- [Tasks App UI by Rasool G. on Dribbble](https://dribbble.com/shots/5097164-Tasks-App)
+- [Flutter AI Chat Tutorial by Hussain Mustafa (GitHub)](https://github.com/hussain-mustafa990)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
