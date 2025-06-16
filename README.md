@@ -1,4 +1,4 @@
-# taskmanager
+# PlannerAI
 
 A new Flutter project.
 
