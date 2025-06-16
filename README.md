@@ -1,6 +1,6 @@
 # PlannerAI
 
-This is a minimal yet powerful mobile task manager application built with Flutter. It supports AI-assisted task creation via Gemini API, intuitive UI, and a clean report screen to track your progress.
+This is a minimal yet powerful mobile task manager application built with Flutter. It supports AI-assisted chat via Gemini API, intuitive UI, and a clean report screen to track your progress.
 
 ## Getting Started
 
